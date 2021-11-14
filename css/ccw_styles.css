@@ -144,7 +144,7 @@ article {
 
 
 
-}
+
 /* Create two unequal columns that floats next to each other Wall Art page */
 .row {
 	background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
@@ -211,6 +211,12 @@ footer p {
 	}
 	
 	footer {
+  max-width: 100%;
+  height: auto;
+    
+}
+
+article {
   max-width: 100%;
   height: auto;
     
