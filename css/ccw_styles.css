@@ -19,19 +19,19 @@ html {
 }
 
 body {
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	background: black;
    display: -webkit-flex;
    display: flex;
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
-     
    max-width: 1024px;
-   min-width: 420px;
+   min-width: 420px;  
+   
    margin: 0px auto;
    border: 10px solid rgb(0, 0, 0);
 }
-/* Flex Layout */
 
+/* Flex Layout */
 body {
    display: -webkit-flex;
    display: flex;
@@ -39,23 +39,16 @@ body {
    flex-flow: column nowrap;
 }
 
-header, footer {
+header, article, footer {
    -webkit-flex-shrink: 0;
    flex-shrink: 0;
 }
 
-div#container {
-   -webkit-flex: 1 0 auto;
-   flex: 1 0 auto;
-}
 
 /* Header Styles */
 
-header {
-   
-}
 
-body > header {
+ header {
 	
    width: 100%;   
 }
@@ -66,6 +59,7 @@ img#logoimg {
    display: block;
    width: 100%;
 }
+
 
 /* Horizontal Navigation Styles */
 
@@ -101,47 +95,43 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, nav.horizontal ul li a:active {
-   color: rgb(204, 51, 0);
-   text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+   color: rgb(102, 255, 102);
+   
 }
 a#navicon {
    display: none;
 }
-
-/* Container Styles */
-
-div#container {
-   background: rgb(248, 248, 210);
-
+/* Two images from Index page */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
+
+/* Clear floats after image containers on Index page */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
 /* Article Styles */
-div#container {
-   
-   font-family: Verdana, Geneva, sans-serif;
-   
-   padding: 5px 0px 5px 12px;
-}
-
-div#container {
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-   font-size: 2em;
-   letter-spacing: 0.2em;
-   line-height: 1.2em;
-   margin: 15px 0px 15px 0px;
-   font-weight: normal;
+article {
+   width: 98%;
+   margin: 10px auto;
 }
 
 
-
-div#container {
-   float: left;
-   margin: 10px 20px 10px 5px;
-}  
-
-
-
-article#index {
-   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+article {
+   background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
    color: white ;
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
@@ -152,82 +142,50 @@ article#index {
    text-align: left;
 }
 
-article#index h2 {
+
+
+}
+/* Create two unequal columns that floats next to each other Wall Art page */
+.row {
+	background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
+}
+.column {
+  
+  float: left;
+  
+  
+}
+
+.left {
    color: white;
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
-   font-size: 0.8em;
+   font-size: 2em;
    letter-spacing: 0.03em;
    line-height: 1.2em;
    margin-bottom: 0px;
    text-align: left;
+   width: 85%;
 }
 
-article#reviews {
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-   color: white;
+.right {
+   color: black;
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
-   font-size: 0.8em;
-   letter-spacing: 0.03em;
-   line-height: 1.2em;
-   margin-bottom: 0px;
-   text-align: left;
-}
-/* Right Article styles */
-
-article#right {
-	
-   padding: 0px 15px 0px 15px;
-}
-
-/* Aside Styles */
-aside#reviewsform {
-	
-   border: 1px solid rgb(153, 0, 153);
-   border-radius: 20px;
-   box-shadow: inset rgb(131, 131, 131) 5px 5px 10px,  inset rgb(131, 131, 131) -5px -5px 10px,  rgb(51, 51, 51) -5px 5px 25px;
-   margin: 15px 0px;
-   width: 100%;
-}
-
-
-
-aside#reviewsform {
-	
-   border-left: 4px solid rgb(153,0,153);
    font-size: 1em;
-}
-
- aside#reviewsform:last-of-type {
-   margin-bottom: 25px; 
- }
-
-aside#reviewsform p {
-   background-color: rgb(153,0,153);
-   border-radius: 10px;
-   color: black;
-   font-size: 0.9em;
-   text-align: center;
-   margin: 10px;
-}
-
-/*aside h2 {
-   color: black;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 0px;
    text-align: left;
-   font-size: 0.9em;
-   line-height: 0.95;
-   margin: 15px;
+   width: 15%;
 }
 
-aside p {
-   border-left: 4px solid rgb(255,202,255);
-   font-size: 0.7em;
-   padding: 0px 0px 0px 5px;
-   margin: 10px 25px;
-*/
+
+
+
 footer {
    width: 100%;
+   
 }
 
 footer p {
@@ -246,11 +204,26 @@ footer p {
    ===============================
 */
 @media only screen and (max-width: 640px) {
+	
+	img {
+  max-width: 100%;
+  height: auto;
+	}
+	
+	footer {
+  max-width: 100%;
+  height: auto;
+    
+}
 
-   
+
    a#navicon {
       display: block;
    }
+   
+   .column {
+    width: 100%;
+  }
    
    header nav ul {
       display: none;
@@ -266,13 +239,8 @@ footer p {
       display: block;
    }
    
-   section h1 {
-      font-size: 1em;
-   }
+
    
-   section p {
-      font-size: 0.5em;
-   }
 }
 
 /* =============================================
@@ -281,15 +249,8 @@ footer p {
 */
 @media only screen and (min-width: 641px) {
 	
-	article#reviews {
-      float: left;
-      width: 70%;
-   }
-   
-    article#right {
-      float: left;
-      width: 30%;
-   }
+	
+	
    body header nav ul {
       display: -webkit-flex;
       display: flex;
