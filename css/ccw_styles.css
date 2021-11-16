@@ -39,10 +39,7 @@ body {
    flex-flow: column nowrap;
 }
 
-header, article, footer {
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-}
+
 
 
 /* Header Styles */
@@ -56,8 +53,20 @@ header, article, footer {
 img#logoimg {
 	border-bottom-style: solid;
 	border-color: black;
-   display: block;
-   width: 100%;
+    display: block;
+    width: 100%;
+}
+
+/*Social Media Links */
+ul.social li {
+    display: inline-block;
+	float: right;
+    list-style: none;
+	padding: 5px;
+}
+ul.social a img {
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -72,22 +81,22 @@ header nav ul {
    justify-content: center;
    -webkit-align-items: center;
    align-items: center;
-   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+   background: linear-gradient(to top, rgb(153, 153, 0),  rgb(225, 225, 225));
    height: 40px;
   
 }
    
 header nav ul li {
 	
-   -webkit-flex: 0 1 80px;
+   -webkit-flex: 0 1 40px;
    flex: 0 1 80px; 
    list-style-type: none;
-   margin: 10px;
+   margin: 20px;
 }
 
 header nav ul li a {
 	
-   color: rgb(255, 255, 255);
+   color: black;
    display: block;
    font-size: 2.5em;
    text-align: center;
@@ -95,32 +104,40 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, nav.horizontal ul li a:active {
-   color: rgb(102, 255, 102);
+   color: yellow;
    
 }
 a#navicon {
    display: none;
 }
-/* Two images from Index page */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
+
+/* Index page images */
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+		}
+
+
 
 /* Clear floats after image containers on Index page */
-.row::after {
+.center::after {
   content: "";
   clear: both;
   display: table;
 }
-.row {
+.center {
   display: flex;
 }
 
-.column {
+.center {
   flex: 50%;
   padding: 5px;
+}
+/* Index page Hyperlink to Wall Art page*/
+a#walink {
+	color: yellow;
 }
 
 /* Article Styles */
@@ -131,7 +148,7 @@ article {
 
 
 article {
-   background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
+   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
    color: white ;
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
@@ -142,8 +159,33 @@ article {
    text-align: left;
 }
 
+/*Wall Art images */
+img#wallArt {
+	float: left;
+	width: 50%;
+	padding: 10px 0px;
+		}
+		
+/* Clear floats after image containers on Wall Art page */
+img#wallArt::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img#wallArt {
+  display: flex;
+}
 
+img#wallArt {
+  flex: 50%;
+  padding: 5px;
+}
 
+/* Wall Art page video */
+iframe#video {
+	width: 560px;
+	height: 315px;
+}
 
 /* Create two unequal columns that floats next to each other Wall Art page */
 .row {
@@ -181,7 +223,14 @@ article {
 }
 
 
+/*Footer styles */
+a#tel {
+	color: white;
+}
 
+a#tel:hover, active {
+   color: yellow;
+}
 
 footer {
    width: 100%;
@@ -191,7 +240,7 @@ footer {
 footer p {
 	border-top-style: solid;
 	border-color: black;
-   color: rgb(211, 211, 211);
+   color: white;
    font-size: 1.5em;
    text-align: center;
    background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
@@ -205,7 +254,7 @@ footer p {
 */
 @media only screen and (max-width: 640px) {
 	
-	img {
+	img#index {
   max-width: 100%;
   height: auto;
 	}
