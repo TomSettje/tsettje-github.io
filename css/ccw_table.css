@@ -5,18 +5,23 @@
 
    Table Style Sheet
    Author: Tom Settje
-   Date:   17OCt2021
-
+   Date:   Oct2021
+   These web pages are for educational purposes only. 
    Filename:         ccw_table.css
 
 */
 
+
 /* Table Styles */
+
+
 table.prices {
-	background: rgb(102, 51, 0);
-	border: 10px outset rgb(0, 0, 0);
+	
+	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	border: 1px outset rgb(0, 0, 0);
 	border-collapse: collapse;
-	font-size: 1em;
+	font-size: 1.5em;
+	
 	width: 100%;
 }
 
@@ -32,14 +37,15 @@ table.prices th, table.prices td {
 /* Table Caption Styles */
 table.prices caption {
 	caption-side: bottom;
-	text-align: right;
+	text-align: center;
 }
 
 
 /* Row Group Styles */
-table.prices thead {
-	background: rgb(102, 51, 0);
+table.prices thead, tbody  {
+	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
 	color: white;
+	text-align: center;
 	
 }
 

@@ -6,7 +6,9 @@
    Creston Creek Layout Style Sheet
 
    Filename: ccw_styles.css
-   
+   Author: Tom Settje
+   Date: Nov/2021
+   These web pages are for educational purposes only. 
 */
 
 
@@ -24,11 +26,11 @@ body {
    display: flex;
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
-   max-width: 1024px;
+   max-width: 1240px;
    min-width: 420px;  
    
-   margin: 0px auto;
-   border: 10px solid rgb(0, 0, 0);
+   margin: 5px auto;
+   border: 5px solid rgb(0, 0, 0);
 }
 
 /* Flex Layout */
@@ -51,8 +53,7 @@ body {
 }
 
 img#logoimg {
-	border-bottom-style: solid;
-	border-color: black;
+	
     display: block;
     width: 100%;
 }
@@ -68,6 +69,9 @@ ul.social a img {
     width: 20px;
     height: 20px;
 }
+
+
+
 
 
 /* Horizontal Navigation Styles */
@@ -112,114 +116,242 @@ a#navicon {
 }
 
 /* Index page images */
-.center {
+.center1 {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+	float: left;
+    width: 47%;
+		}
+
+.center2 {
+	display: block;
+	float: right;
+    width: 47%;
+		}
+
+.center1 {
+	border: 10px outset rgb(0, 0, 0);
+	border-radius: 25px;
+	flex: 50%;
+	padding: 5px;
+}
+
+.center2 {
+	border: 10px outset rgb(0, 0, 0);
+	border-radius: 25px;
+	flex: 50%;
+	padding: 5px;
+}
+
+
+
+
+/* Index page Hyperlink to Wall Art page*/
+a#walink {
+	color: yellow;
+			}
+
+h1 {
+	color: white;
 		}
 
 
 
-/* Clear floats after image containers on Index page */
-.center::after {
+	/* Index Page Text Styles*/
+.about {
+	   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
+	   border: 1px outset rgb(0, 0, 0);
+	   color: white ;
+	   font-family: Verdana, Geneva, sans-serif;
+	   font-weight: normal;
+	   font-size: 1.5em;
+	   letter-spacing: 0.03em;
+	   line-height: 1.2em;
+       width: 100%;
+}
+
+	/* Wall Art Page Text Styles*/
+.product {
+	   border: 1px outset rgb(0, 0, 0);
+	   color: white ;
+	   font-family: Verdana, Geneva, sans-serif;
+	   font-weight: normal;
+	   font-size: 1.2em;
+	   letter-spacing: 0.03em;
+	   line-height: 1.2em;
+	   width: 100%;
+}
+
+
+
+	/* Reviews Page Text Styles*/
+.reviews {
+		background: white;
+		border: 1px outset rgb(0, 0, 0);
+		color: black;
+		font-family: 'Brush Script MT', cursive;
+		font-weight: normal;
+		font-size: 2em;
+		letter-spacing: 0.03em;
+		line-height: 1.2em;
+		width: 100%;
+}
+
+
+		
+/* Clear floats after image containers on Wall Art page */
+
+
+img#wallArt1 {
+		  border: 5px outset rgb(0, 0, 0);
+		  border-radius: 25px;
+		  display: block;
+		  flex: 50%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 75%;
+}
+
+img#wallArt2 {
+		  border: 5px outset rgb(0, 0, 0);
+		  border-radius: 25px;
+		  display: block;
+		  flex: 50%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 75%;
+}
+
+/* Wall Art page video */
+.dryWall{
+	
+	width:99%;height:300px;
+}
+
+/*Credit Card Icons Wall Art Page */
+img#creditCards {
+	  border-radius: 5px;
+	  flex: 50%;
+	  padding: 5px;
+	  width: 95%;
+}
+
+
+/* Create two equal columns that floats next to each other Wall Art page*/
+.column {
+  float: left;
+  width: 49%;
+}
+
+/* Clear floats */
+.row:after {
   content: "";
-  clear: both;
   display: table;
-}
-.center {
-  display: flex;
-}
-
-.center {
-  flex: 50%;
-  padding: 5px;
-}
-/* Index page Hyperlink to Wall Art page*/
-a#walink {
-	color: yellow;
-}
-
-/* Article Styles */
-article {
-   width: 98%;
-   margin: 10px auto;
-}
-
-
-article {
+  clear: both;
+}  
+  
+.row {
    background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-   color: white ;
+}
+
+.column {
+   
+   border: 1px outset rgb(0, 0, 0);
+   color: white;
    font-family: Verdana, Geneva, sans-serif;
    font-weight: normal;
    font-size: 1.2em;
    letter-spacing: 0.03em;
-   line-height: 1.2em;
-    padding: 5px 0px 5px 12px;
-   text-align: left;
-}
-
-/*Wall Art images */
-img#wallArt {
-	float: left;
-	width: 50%;
-	padding: 10px 0px;
-		}
-		
-/* Clear floats after image containers on Wall Art page */
-img#wallArt::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-img#wallArt {
-  display: flex;
-}
-
-img#wallArt {
-  flex: 50%;
-  padding: 5px;
-}
-
-/* Wall Art page video */
-iframe#video {
-	width: 560px;
-	height: 315px;
-}
-
-/* Create two unequal columns that floats next to each other Wall Art page */
-.row {
-	background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
-}
-.column {
-  
-  float: left;
-  
-  
-}
-
-.left {
-   color: white;
-   font-family: Verdana, Geneva, sans-serif;
-   font-weight: normal;
-   font-size: 2em;
-   letter-spacing: 0.03em;
-   line-height: 1.2em;
+   line-height: 1.1em;
    margin-bottom: 0px;
-   text-align: left;
-   width: 85%;
+   
 }
 
-.right {
-   color: black;
-   font-family: Verdana, Geneva, sans-serif;
-   font-weight: normal;
-   font-size: 1em;
-   letter-spacing: 0.03em;
-   line-height: 1.2em;
-   margin-bottom: 0px;
-   text-align: left;
-   width: 15%;
+
+
+
+
+/* Form Layout Styles */
+input {
+	border: 1px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+	
+}
+select#orderChoice {
+	border: 1px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+}
+select#sizeChoice {
+	border: 1px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+}
+
+select#panelChoice {
+	border: 1px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+}
+
+
+form#order {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+}
+form#order {
+	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	border-radius: 10px;
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	margin: 7px 0px;
+	
+}
+
+div.formRow >  * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+
+
+/* Order Form Legend Styles */
+legend {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	padding: 5px;
+	
+}
+
+/* Form Button Styles */
+div#submitButton {
+	text-align: center;
+	width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
 }
 
 
@@ -232,14 +364,22 @@ a#tel:hover, active {
    color: yellow;
 }
 
+a#email {
+	color: white;
+}
+
+a#email:hover, active {
+   color: yellow;
+}
+
 footer {
    width: 100%;
    
 }
 
 footer p {
-	border-top-style: solid;
-	border-color: black;
+   border-top-style: solid;
+   border-color: black;
    color: white;
    font-size: 1.5em;
    text-align: center;
@@ -247,7 +387,6 @@ footer p {
    margin: 0px;
    padding: 10px 0px;
 }
-
 /* ===============================
    Mobile Styles: 0px to 640px 
    ===============================
@@ -258,6 +397,10 @@ footer p {
   max-width: 100%;
   height: auto;
 	}
+
+.column {
+    width: 50%;
+  }
 	
 	footer {
   max-width: 100%;
@@ -276,9 +419,7 @@ article {
       display: block;
    }
    
-   .column {
-    width: 100%;
-  }
+  
    
    header nav ul {
       display: none;
@@ -320,3 +461,4 @@ article {
       flex: 0 1 auto;
    }
 }
+
