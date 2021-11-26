@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+		Final Project CMIS 410
+		
+		Author: Tom Settje
+		Date: Nov2021
+		File name: reviews.html
+		
+		These web pages are for educational purposes only. 
+	
+	-->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Creston Creek Woodworks</title>
+   <link href="css/ccw_styles.css" rel="stylesheet" /> 
+	<link href="css/ccw_starReview.css" rel="stylesheet" /> 
+</head>
+
+<body> 
+
+   <header>
+      
+      <nav> <a id="navicon" href="index.html"><img src="images/cc_navicon.png" alt="Navicon" /></a>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wallart.html">Wall Art</a></li>
+            <li><a class="active" href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+		   
+			</nav>
+		
+			<a href="index.html"  target="_blank">
+					<img src="images/CC_logo2.png" alt="Creston Creek Workshop" id="logoimg"  />
+				</a>
+		</header>
+		
+		
+	
+		<div class="container">
+				<div class="columnLeft">
+   
+				<img src="images/customerReview2.jpg" alt="Customer Reviews" id="thumbsUp"  />
+				<div class="reviews">
+    	 
+				<p>"We are 100% satisfied with our order! The wall art is exactly what we wanted. The seller was easy to work with. We have been searching for a piece of rustic art for our kitchen and this piece is perfect. The quality of the art is superb. I would highly recommend this wall art."<br> Dave T. Omaha, NE</p>
+					<hr style="height:2px;border-width:0;color:gray;background-color:silver">
+		
+				<p>"Absolutely stunning! Very well made and good quality materials. Very happy with how it looks in our living room.<br> Kylie S. Clarinda, IA </p>
+					<hr style="height:2px;border-width:0;color:gray;background-color:silver">
+			 
+				<p>“Great looking piece of art that came quickly. This is exactly what we were looking for...a unique piece of art that we actually enjoy looking at. I plan to buy more from this vendor."<br> Joe G. Ventura, CA</p>
+				 		
+				   </div>
+			</div>
+	
+	 
+			<div class="columnRight">
+		
+				<form id="reviewForm" action="review.php" method="post">
+				
+				<fieldset id="feedbackInfo">
+				
+				
+				<img src="images/reviews_crop.png" alt="We Want Your Feedback" id="feedback"  />
+				
+				<hr style="height:2px;border-width:0;color:gray;background-color:black">
+				
+					<div class="formRow">
+							<label for="fname">First Name</label>
+							<input name="custFname" id="fname" type="text" placeholder="first name" /> 
+						</div>	
+					<div class="formRow">
+							<label for="lname">Last Name</label>
+							<input name="custLname" id="lname" type="text" placeholder="last name" /> 
+						</div>	
+				 
+					<div class="formRow">
+							<label for="city">City</label>
+							<input name="custCity" id="city" type="text" placeholder="City" />
+						</div>
+				
+					<div class="formRow">
+							<label for="state">State</label>
+							<input name="custState" id="state" type="text" placeholder="State" />
+						</div>
+
+					
+					<div class="formRow">	
+							<label for="mail">E-mail</label>
+							<input name="custEmail" id="mail" type="email" />
+						</div>
+				
+					</fieldset>
+				
+			
+			<h2>Please Rate Your Purchase</h2>
+		
+			<!--Star Rating code from https://codepen.io/melnik909/pen/OvaxVY	-->
+			 <div class="page">
+		  
+				<div class="page__group">  
+				<div class="rating">
+				<input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc6">
+				<input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc7">
+				<input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc8" checked>
+				<input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc9">
+				<input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc10">
+				<label for="rc6" class="rating__item">
+				  <svg class="rating__star">
+					<use xlink:href="#star"></use>
+				  </svg>
+				  <span class="screen-reader">1</span>
+				</label>
+				<label for="rc7" class="rating__item">
+				  <svg class="rating__star">
+					<use xlink:href="#star"></use>
+				  </svg>
+				  <span class="screen-reader">2</span>
+				</label>
+				<label for="rc8" class="rating__item">
+				  <svg class="rating__star">
+					<use xlink:href="#star"></use>
+				  </svg>
+				  <span class="screen-reader">3</span>
+				</label>
+				<label for="rc9" class="rating__item">
+				  <svg class="rating__star">
+					<use xlink:href="#star"></use>
+				  </svg>
+				  <span class="screen-reader">4</span>
+				</label>
+				<label for="rc10" class="rating__item">
+				  <svg class="rating__star">
+					<use xlink:href="#star"></use>
+				  </svg>
+				  <span class="screen-reader">5</span>
+				</label>	
+			  </div> 
+
+				<hr style="height:15px;border-width:0;color:gray;background-color:black">
+      
+				<label for="commBox">Enter Your Review Below</label>
+				<textarea name="custExp" id="commBox"></textarea>
+				
+				<div id="submitButton">
+					<input type="submit" value="Submit My Review" />
+					<input type="reset" value="Cancel" />
+			
+					</div>	
+				</div>
+			</div>
+			
+				<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+				  <symbol id="star" viewBox="0 0 26 28">
+					<path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+				  </symbol>
+					</svg>
+				<!--End of Star Rating code from https://codepen.io/melnik909/pen/OvaxVY	-->
+					
+		
+				</form>
+					<div class="thankYou_review">
+						<hr style="height:12px;border-width:0;color:gray;background-color:black">
+						<h2>We Appreciate Your Review!</h2>
+					 </div>
+					
+				</div>
+			</div>
+			<ul class="social_icons">
+			
+			<li>
+				<a href="https://www.facebook.com/" target="_blank"><img alt="Facebook.com" src="images/facebook.png"></a>
+				</li>
+			<li>
+				<a href="https://www.twitter.com/" target="_blank"><img alt="Twitter.com" src="images/twitter.png"></a>
+				</li>
+		    <li>
+				<a href="https://www.instagram.com/" target="_blank"><img alt="Instagram.com" src="images/instagram.png"></a>
+				</li>
+            <li>
+				<a href="https://www.youtube.com/" target="_blank"><img alt="Youtube.com" src="images/youtube.png"></a>
+				</li>
+			<li>
+				<a href="https://www.pinterest.com/" target="_blank"><img alt="Pinterest.com" src="images/pinterest.png"></a>
+				</li>
+			</ul>
+		 
+		
+    <footer>
+      <p> 
+        <a href="mailto:CCW.com" id="emailUs">  CCW.com </a> &#183; Creston Creek Woodworks &#183; 6500 Fletcher Avenue, Lincoln NE 68502 &#183; <a href="tel:+14024658751" id="callUs">(402)-465-8751 </a>
+			</p>
+			<hr style="height:2px;border-width:0;color:gray;background-color:black">
+   </footer>
+      
+</body>
+</html>
+
