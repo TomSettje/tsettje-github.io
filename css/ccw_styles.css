@@ -15,110 +15,83 @@
 /* HTML and Body Styles */
 
 html {
-   background: linear-gradient(to top, rgb(102, 51, 0),  rgb(71, 71, 71));
-   font-family: Helvetica, sans-serif;
-   font-size: 12px;
+	background: linear-gradient(to top, rgb(102, 51, 0),  rgb(71, 71, 71));
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
 }
 
 body {
-	 background-color: black;
-	 border: 1px solid rgb(0, 0, 0);
-     display: -webkit-flex;
-     display: flex;
-     -webkit-flex-flow: row wrap;
-     flex-flow: row wrap;
-     max-width: 1240px;
-     min-width: 420px;  
-     margin: 5px auto;
+	background-color: black;
+	border: 5px solid rgb(0, 0, 0);
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1240px;
+	min-width: 420px;  
+	margin: 5px auto;
      
 }
 
-/* Flex Layout */
-body {
-   	
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-flow: column nowrap;
-   flex-flow: column nowrap;
-}
 
 /* Header Styles */
 
 
  header {
-	
-   width: 100%;   
+	background: black;
+	width: 100%;   
 }
 
 img#logoimg {
 	
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 /* Horizontal Navigation Styles */
 
 header nav ul {
-   display: -webkit-flex;
+   background-color: rgb(128, 85, 0);
    display: flex;
-   -webkit-flex-flow: row nowrap;
-   flex-flow: row nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   background: linear-gradient(to top, rgb(153, 153, 0),  rgb(225, 225, 225));
-   height: 40px;
    font-weight: bold;
-  
+   justify-content: center;
+            
 }
    
 header nav ul li {
-	
-   -webkit-flex: 0 1 40px;
-   flex: 0 1 80px; 
+	   
    list-style-type: none;
-   margin: 20px;
+   margin: 5px 10px 5px 10px;
 }
 
 header nav ul li a {
 	
-   color: black;
+   color: white;
    display: block;
    font-size: 2.5em;
+   margin: 5px 25px 5px 25px;
    text-align: center;
    
 }
 header nav ul li a:hover, nav.horizontal ul li a:active {
-   color: yellow;
+    color: rgb(255,233,0);
    
+}
+
+.active {
+	color: rgb(153, 255, 153);
 }
 
 
 a#navicon {
-   display: none;
+     display: none;
 }
 
-/*Social Media Links */
 
 
-ul.social_icons li {
-    display: inline-block;
-	list-style: none;
-	padding: 5px;
-	
-}
-ul.social_icons a img {
-	
-    width: 30px;
-    height: 30px;
-	
-}
 /*Beginning of Index Page*/
 
 /* Index page Hyperlink to Wall Art page*/
 a#walink {
-	color: yellow;
+    color: yellow;
 			}
 		
 /* Index page images */
@@ -152,15 +125,15 @@ a#walink {
 		
 		/* Index Page Text Styles*/
 .about_Us {
-	   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
-	   border: 1px outset rgb(0, 0, 0);
-	   color: white ;
-	   font-family: Helvetica, sans-serif;
-	   font-weight: normal;
-	   font-size: 1.5em;
-	   letter-spacing: 0.03em;
-	   line-height: 1.2em;
-       width: 100%;
+	 background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
+	 border: 1px outset rgb(0, 0, 0);
+	 color: white ;
+	 font-family: Helvetica, sans-serif;
+	 font-weight: normal;
+	 font-size: 1.5em;
+	 letter-spacing: 0.03em;
+	 line-height: 1.2em;
+     width: 100%;
 	   text-indent: 1.5em;
 }
 
@@ -169,49 +142,121 @@ a#walink {
 
 /*Beginning of Wall Art Page*/
 
+.wa_container {
+		background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+}
+
+.wa_container:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+.wa_columnLeft {
+   
+		border: 1px solid black;
+		color: white;
+		font-family: Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 1.2em;
+		letter-spacing: 0.03em;
+		line-height: 1.1em;
+ }
+
+.wa_columnLeft {
+		float: left;
+		width: 49%;
+}
+
+.wa_columnRight {
+  
+		color: white;
+		font-family: Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 1.2em;
+		letter-spacing: 0.03em;
+		line-height: 1.1em;
+ }
+ 
+.wa_columnRight {
+		float: left;
+		width: 49%;
+}
+
 /* Images on Wall Art page */
+.wallArtImages {
+		position: relative;
+		display: inline-block;
+}
+
+.wallArtImages_dropdown {
+		  border: 10px outset rgb(165, 143, 23);
+		  border-radius: 15px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  display: none;
+		  min-width: 160px;
+		  position: absolute;
+		  z-index: 1;
+}
+
+.wallArtImages:hover .wallArtImages_dropdown {
+		display: block;
+}
+
+
 img#wallArt1 {
-		 border: 10px outset rgb(165, 143, 23);
+		  border: 10px outset rgb(165, 143, 23);
 		  border-radius: 25px;
 		  display: block;
-		  
 		  margin-left: auto;
 		  margin-right: auto;
 		  width: 75%;
+}
+
+img#wallArt1_dropdown {
+		  border-radius: 15px;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  
 }
 
 img#wallArt2 {
 		  border: 10px outset rgb(165, 143, 23);
 		  border-radius: 25px;
 		  display: block;
-		  
 		  margin-left: auto;
 		  margin-right: auto;
 		  width: 75%;
 }
 
+img#wallArt2_dropdown {
+		  border-radius: 15px;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+}
+
 img#creditCards {
-	  border: 1px solid black;
-	  border-radius: 5px;
-	 
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 99%;
+		border: 1px solid black;
+		border-radius: 5px;
+	    margin-left: auto;
+		margin-right: auto;
+		width: 99%;
 }
 
 img#order {
-	  border: 10px outset rgb(165, 143, 23);
-	  border-radius: 5px;
-	 
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 97%;
+	    border: 10px outset rgb(165, 143, 23);
+	    border-radius: 5px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 97%;
 }
 
-/* Wall Art page video */
+	/* Wall Art page video */
 .dryWall{
-	height:300px;
-	width:99%;
+	    height:300px;
+	    width:99%;
 }
 
 	/* Wall Art Page Text Styles*/
@@ -225,12 +270,11 @@ img#order {
 	   letter-spacing: 0.03em;
 	   line-height: 1.2em;
 	   text-indent: 1.5em;
-	   width: 100%;
+	  
 }
 
 .wallArt_Description {
-	   background: rgb(165, 143, 23);  
-	   border: 1px outset rgb(0, 0, 0, 0);
+	       
 	   color: white ;
 	   font-family: Helvetica, sans-serif;
 	   font-weight: normal;
@@ -241,18 +285,6 @@ img#order {
 	   width: 100%;
 }
 
-.wallArtImages {
-	   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
-	   border: 1px outset rgb(0, 0, 0, 0);
-	   color: white ;
-	   font-family: Helvetica, sans-serif;
-	   font-weight: normal;
-	   font-size: 2em;
-	   letter-spacing: 0.03em;
-	   line-height: 1.2em;
-	   text-align: center;
-	   width: 100%;
-}
 
 .wallArtVideo {
 	  
@@ -263,389 +295,360 @@ img#order {
 	   letter-spacing: 0.03em;
 	   line-height: 1.2em;
 	   margin-left: auto;
-	  margin-right: auto;
+	   margin-right: auto;
 	   width: 95%;
 }
 
-/* Create two equal columns that floats next to each other on Wall Art page*/
-
-.wa_container {
-   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-}
-
-.wa_container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- 
-
-/*Wall Art Descriptions*/
-.wa_columnLeft {
-   
-   border: 1px solid black;
-   color: white;
-   font-family: Helvetica, sans-serif;
-   font-weight: normal;
-   font-size: 1.2em;
-   letter-spacing: 0.03em;
-   line-height: 1.1em;
- }
-
-.wa_columnLeft {
-  float: left;
-  width: 49%;
-}
-
-.wa_columnRight {
-   border: 1px solid black;
-   color: white;
-   font-family: Helvetica, sans-serif;
-   font-weight: normal;
-   font-size: 1.2em;
-   letter-spacing: 0.03em;
-   line-height: 1.1em;
- }
- 
- .priceTable {
-   color: white;
-   font-family: Helvetica, sans-serif;
-   
-   text-align: center;
- }
-
-.wa_columnRight {
-   float: left;
-   width: 49%;
-}
-
-.artText {
+.wallArt_headerText {
 	
-   color: white;
-   font-family: Apple Chancery, cursive;
-   font-weight: normal;
-   font-size: 1.5em;
-   letter-spacing: 0.03em;
-   line-height: 0.9em;
+	   color: white;
+	   font-family: Apple Chancery, cursive;
+	   font-weight: normal;
+	   font-size: 1.5em;
+	   letter-spacing: 0.03em;
+	   line-height: 0.9em;
+	   text-align: center;
 }
 
-/* Form Layout Styles Wall Art Page*/
+.thankYou_order {
+	   color: white;
+       font-family: Apple Chancery, cursive;
+       font-weight: normal;
+       font-size: 1.7em;
+       letter-spacing: 0.03em;
+       line-height: 0.9em;
+       text-align: center;
+}
+
+ 
+.priceTable {
+	  color: white;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+ }
+
+
+	/* Form Layout Styles Wall Art Page*/
 input {
-	border: 1px solid black;
-	border-radius: 4px;
-	box-sizing: border-box;
-	color: black;
+	  border: 1px solid black;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  color: black;
 	
 }
 
 fieldset#custInfo {
-	color: white;
-   font-family: Helvetica, sans-serif;
-   font-weight: bold;
-   font-size: 1.2em;
-   letter-spacing: 0.03em;
-   line-height: 1.1em;
-	width: 98%;
+	  border: 1px solid black;
+	  color: white;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.2em;
+      letter-spacing: 0.03em;
+      line-height: 1.1em;
+	  width: 100%;
 }
 select#orderChoice {
-	border: 1px solid black;
-	border-radius: 4px;
-	box-sizing: border-box;
-	color: black;
+	  border: 1px solid black;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  color: black;
 }
 select#sizeChoice {
-	border: 1px solid black;
-	border-radius: 4px;
-	box-sizing: border-box;
-	color: black;
+	  border: 1px solid black;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  color: black;
 }
 
 select#panelChoice {
-	border: 1px solid black;
-	border-radius: 4px;
-	box-sizing: border-box;
-	color: black;
+	  border: 1px solid black;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  color: black;
 }
 
 form#orderForm {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  width: 99%;
 	
 }
 form#orderForm {
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-	border-radius: 10px;
-	-webkit-flex: 1 1 300px;
-	flex: 1 1 300px;
-	font-size: 0.85em;
-	padding: 10px;
-	margin: 10px;
+	  background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	  border-radius: 10px;
+	  -webkit-flex: 1 1 300px;
+	  flex: 1 1 300px;
+	  font-size: 0.85em;
+	  margin: 10px;
+	  padding: 10px;
+	  
 }
 
-/*End of Wall Art Page */
+	/*End of Wall Art Page */
 
-/*Beginning of Review page*/
-.review_container {
-     background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-}
+	/*Beginning of Review page*/
  
-.review_container:after {
-     content: "";
-     display: table;
-     clear: both;
-}  
 
 /*Review Page Images*/
 img#feedback {
-		  border: 1px solid black;
-		  border-radius: 10px;
-		  display: block;
-		  width: 99%;
+	  border: 1px solid black;
+	  border-radius: 10px;
+	  display: block;
+	  width: 99%;
 }
 
 img#custReview {
-		  border: 1px solid black;
-		  display: block;
-		  max-height: 315px; 	
-		  width: 100%;
+	  border: 1px solid black;
+	  display: block;
+	  max-height: 315px; 	
+	  width: 100%;
+}
+img#thumbsUp {
+	  border: 1px solid black;
+	  display: block;
+	  max-height: 315px; 	
+	  width: 100%;
 }
 
-/* Reviews Page Text Styles*/
+	/* Reviews Page Text Styles*/
 .reviews {
-		background: linear-gradient(to top, rgb(90, 51, 0),  rgb(71, 71, 71));
-		border: 1px solid black;
-		color: white;
-		font-family: Apple Chancery, cursive;
-		font-weight: normal;
-		font-size: 2em;
-		letter-spacing: 0.03em;
-		line-height: 1.2em;
-		width: 100%;   
+	  background: linear-gradient(to top, rgb(90, 51, 0),  rgb(71, 71, 71));
+	  border: 1px solid black;
+	  color: white;
+	  font-family: Apple Chancery, cursive;
+	  font-weight: normal;
+	  font-size: 1.9em;
+	  letter-spacing: 0.03em;
+	  line-height: 1.2em;
+	  width: 100%;   
 		
 }
 fieldset#feedbackInfo {
-	color: white;
-   font-family: Helvetica, sans-serif;
-   font-weight: normal;
-   font-size: 1.2em;
-   letter-spacing: 0.03em;
-   line-height: 1.1em;
-	width: 98%;
+	  border: 1px solid black;
+	  color: white;
+      font-family: Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1.2em;
+      letter-spacing: 0.03em;
+      line-height: 1.1em;
+	  width: 100%; 
+}
+	/*Comment Box Text Area*/
+textarea {
+	  margin-top: 10px;
+	  height: 175px;
+	  width: 100%;
 }
 
-/*Reviews from Customers*/
-.review_columnleft {
+form#reviewForm {
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-flex-flow: row wrap;
+	  flex-flow: row wrap;
 	
 }
-
-.review_columnLeft {
-  float: left;
-  width: 65%;
+form#reviewForm {
+	  background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	  border-radius: 10px;
+	  -webkit-flex: 1 1 300px;
+	  flex: 1 1 300px;
+	  font-size: 0.85em;
+	  margin: 10px;
+	  padding: 10px;
+	  width: 90%;
 }
 
-/*Feedback*/
+.thankYou_review {
+	  color: white;
+      font-family: Apple Chancery, cursive;
+      font-weight: normal;
+      font-size: 1.2em;
+      letter-spacing: 0.03em;
+      line-height: 0.9em;
+      text-align: center;
+}
 
-.review_columnRight {
-   border: 1px solid black;
+	/*End of Review Page*/
+	/*Reviews and Contact Us Page Container Descriptions*/
+
+.container {
+    background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+    border: 2px solid black;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.columnLeft {
+   
+    border: 2px solid black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    line-height: 1.1em;
+ }
+
+.columnLeft {
+    float: left;
+    width: 65%;
+}
+
+.columnRight {
+   
    color: white;
    font-family: Helvetica, sans-serif;
    font-weight: normal;
    font-size: 1.2em;
    letter-spacing: 0.03em;
    line-height: 1.1em;
-     
+ }
+ 
+.columnRight {
+   float: left;
+   width: 34%;
 }
 
-.review_columnRight {
-  float: right;
-  width: 34%;
-}
-
-
-textarea {
-	margin-top: 10px;
-	height: 175px;
-	width: 100%;
-}
-
-form#reviewForm {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	
-}
-form#reviewForm {
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-	border-radius: 10px;
-	-webkit-flex: 1 1 300px;
-	flex: 1 1 300px;
-	font-size: 0.85em;
-	padding: 10px;
-	margin: 10px;
-	
-}
-
-/*End of Review Page*/
-
-/*Forms for Wall Art and Review Page*/
+	/*Forms for Wall Art and Review Page*/
 
 div.formRow {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	
-	margin: 7px 0px;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  margin: 7px 0px;
 	
 }
 
 div.formRow >  * {
-	-webkit-flex: 1 1 150px;
-	flex: 1 1 150px;
-}
-
-
-/* Order Form Legend Styles */
-legend {
-	background-color: rgb(0, 0, 0);
-	color: white;
-	padding: 5px;
-	
+	  display: -webkit-flex;
+	  display: flex;
+	  flex: 1 1 150px;
 }
 
 /* Form Button Styles */
 div#submitButton {
-	text-align: center;
-	width: 100%;
+	  text-align: center;
+	  width: 100%;
 }
 
 input[type='submit'], input[type='reset'] {
-	cursor: pointer;
-	font-size: 1.2em;
-	padding: 5px;
-	margin: 15px;
+	  cursor: pointer;
+	  font-size: 1.2em;
+	  margin: 15px;
+	  padding: 5px;
+	  
 }
 
 /*Beginning of Contact Page */
 /* Contact Page Text Styles*/
 .contact {
-	   background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
-	   border: 1px outset rgb(0, 0, 0);
-	   color: white ;
-	   font-family: Helvetica, sans-serif;
-	   font-weight: normal;
-	   font-size: 2em;
-	   letter-spacing: 0.03em;
-	   line-height: 1.2em;
-	   width: 100%;
+	  background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
+	  border: 1px outset rgb(0, 0, 0);
+	  color: white ;
+	  font-family: Helvetica, sans-serif;
+	  font-weight: normal;
+	  font-size: 1.5em;
+	  letter-spacing: 0.03em;
+	  line-height: 1.2em;
+	  width: 100%;
 }
+
+.hoursTable {
+      color: white;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+ }
 
 /*Contact Us Page Image*/
 img#contact {
-		  border: 1px solid black;
-		  display: block;
-		 
-		  width: 100%;
+	  border: 1px solid black;
+	  display: block;
+	  width: 100%;
 }
+
 		
 /* Contact Us page Hyperlink to Phone Number, Email, and Facebook*/
 a#tel {
-	color: white;
+	  color: white;
 }
 a#tel:hover, active {
-   color: yellow;
+      color: yellow;
 }
 
 a#email {
-	color: white;
+	  color: white;
 }
 a#email:hover, active {
-   color: yellow;
+      color: yellow;
 }
 
 a#facebook {
-	color: white;
+	  color: white;
 }
 a#facebook:hover, active {
-   color: yellow;
+      color: yellow;
 }
+
 /*End of Contact Page */
+
+/*Social Media Links */
+
+ul.social_icons  {
+		
+		background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+		font-weight: bold;
+		display: flex;
+		flex-flow: row nowrap;
+        justify-content: center;
+     	list-style-type: none;
+		width: 100%;
+	
+}
+ul.social_icons a img {
+	
+	width: 40px;
+    height: 40px;
+	margin: 5px 25px 5px 25px;
+}
 
 
 /*Footer styles */
 a#callUs {
-	color: white;
+	   color: white;
 }
 
 a#callUs:hover, active {
-   color: yellow;
+      color: yellow;
 }
 
 a#emailUs {
-	color: white;
+	   color: white;
 }
 
 a#emailUs:hover, active {
-   color: yellow;
+       color: yellow;
 }
 
 footer {
-   width: 100%;
+       width: 100%;
    
 }
 
 footer p {
-   border-top-style: solid;
-   border-color: black;
-   color: white;
-   font-size: 1.5em;
-   text-align: center;
-   background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
-   margin: 0px;
-   padding: 10px 0px;
-}
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-	
-	img#index {
-  max-width: 100%;
-  height: auto;
-	}
-
-	
-	footer {
-  max-width: 100%;
-  height: auto;
-    
-}
-
-   a#navicon {
-      display: block;
-   }
-   
-   
-   header nav ul {
-      display: none;
-   }
-   
-   header nav ul li {
-      font-size: 1em;
-      line-height: 1.3em;
-      height: 1.3em;
-   }
-   
-   a#navicon:hover+ul, header nav ul:hover {
-      display: block;
-   }
-   
-
-   
+	   background: linear-gradient(to bottom, rgb(165, 143, 23),  rgb(71, 71, 71));
+       border-top-style: solid;
+       border-color: black;
+       color: white;
+       font-size: 1.5em;
+       text-align: center;
+       margin: 0px;
+       padding: 10px 0px;
 }
 
 /* =============================================

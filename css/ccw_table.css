@@ -2,31 +2,34 @@
 
 /*
    
-
+   Final Project CMIS 410
+   
    Table Style Sheet
+   
    Author: Tom Settje
-   Date:   Oct2021
+   Date:   Nov2021
+   Filename: ccw_table.css
+   
    These web pages are for educational purposes only. 
-   Filename:         ccw_table.css
+   
 
 */
 
 
-/* Table Styles */
+/* Table Styles on Wall Art Page*/
 
 
 table.prices {
-	
-	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-	border: 1px outset rgb(0, 0, 0);
+		
+	border: 2px outset rgb(0, 0, 0);
 	border-collapse: collapse;
 	font-size: 1.5em;
-	
 	width: 100%;
 }
 
 
-/* Table Cell Styles */
+
+
 table.prices th, table.prices td {
 	border: 1px solid black;
 	padding: 5px;
@@ -49,9 +52,6 @@ table.prices thead, tbody  {
 	
 }
 
-
-
-
 table.prices thead tr {
 	height: 30px;
 }
@@ -61,11 +61,61 @@ table.prices tbody tr {
 }
 
 /* Column Group Styles */
-col#firstCol {
+col#firstCol_prices {
 	background: rgb(255, 255, 255);
 	width: 5%;
 }
 col.sizeCols {
+	background: rgb(255, 255, 255);
+	width: 4%;
+}
+
+/* Table Styles on Contact Us Page*/
+
+
+table.hours {
+		
+	border: 2px outset rgb(0, 0, 0);
+	border-collapse: collapse;
+	font-size: 1.5em;
+	width: 100%;
+}
+
+
+
+
+table.hours th, table.hours td {
+	border: 1px solid black;
+	padding: 5px;
+	vertical-align: top;	
+}
+
+
+
+
+
+/* Row Group Styles */
+table.hours  thead, tbody  {
+	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+	color: white;
+	text-align: center;
+	
+}
+
+table.hours  thead tr {
+	height: 30px;
+}
+
+table.hours  tbody tr {
+	height: 40px;
+}
+
+/* Column Group Styles */
+col#firstCol_hours {
+	background: rgb(255, 255, 255);
+	width: 5%;
+}
+col.firstCol_hours {
 	background: rgb(255, 255, 255);
 	width: 4%;
 }
