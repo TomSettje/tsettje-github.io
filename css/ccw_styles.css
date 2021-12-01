@@ -5,9 +5,10 @@
 
    Creston Creek Layout Style Sheet
 
-   Filename: ccw_styles.css
+   
    Author: Tom Settje
    Date: Nov/2021
+   Filename: ccw_styles.css
    These web pages are for educational purposes only. 
 */
 
@@ -49,7 +50,7 @@ img#logoimg {
 /* Horizontal Navigation Styles */
 
 header nav ul {
-   background-color: rgb(128, 85, 0);
+   background-color: rgb(71, 71, 71);
    display: flex;
    font-weight: bold;
    justify-content: center;
@@ -72,32 +73,28 @@ header nav ul li a {
    
 }
 header nav ul li a:hover, nav.horizontal ul li a:active {
-    color: rgb(255,233,0);
-   
-}
+	color: rgb(153, 255, 102);
+	}
 
 .active {
-	color: rgb(153, 255, 153);
+	color: rgb(250, 237, 39);
 }
-
 
 a#navicon {
      display: none;
 }
 
-
-
 /*Beginning of Index Page*/
 
 /* Index page Hyperlink to Wall Art page*/
 a#walink {
-    color: yellow;
+    color: rgb(153, 255, 102);
 			}
 		
 /* Index page images */
 
 .br {
-	border: 10px outset rgb(0, 0, 0);
+	border: 10px outset rgb(165, 143, 23);
 	border-radius: 25px;
 	flex: 50%;
 	padding: 5px;
@@ -110,7 +107,7 @@ a#walink {
 		}
 
 .lv {
-	border: 10px outset rgb(0, 0, 0);
+	border: 10px outset rgb(165, 143, 23);
 	border-radius: 25px;
 	flex: 50%;
 	padding: 5px;
@@ -134,7 +131,7 @@ a#walink {
 	 letter-spacing: 0.03em;
 	 line-height: 1.2em;
      width: 100%;
-	   text-indent: 1.5em;
+	 text-align: center;
 }
 
 /*End of Index Page*/
@@ -153,7 +150,7 @@ a#walink {
 }
 .wa_columnLeft {
    
-		border: 1px solid black;
+		border: 5px solid black;
 		color: white;
 		font-family: Helvetica, sans-serif;
 		font-weight: normal;
@@ -168,7 +165,7 @@ a#walink {
 }
 
 .wa_columnRight {
-  
+   
 		color: white;
 		font-family: Helvetica, sans-serif;
 		font-weight: normal;
@@ -178,24 +175,27 @@ a#walink {
  }
  
 .wa_columnRight {
+	
 		float: left;
-		width: 49%;
+		width: 50%;
 }
 
 /* Images on Wall Art page */
 .wallArtImages {
+	
 		position: relative;
 		display: inline-block;
 }
 
 .wallArtImages_dropdown {
-		  border: 10px outset rgb(165, 143, 23);
-		  border-radius: 15px;
-		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		  display: none;
-		  min-width: 160px;
-		  position: absolute;
-		  z-index: 1;
+	
+		border: 10px outset rgb(165, 143, 23);
+		border-radius: 15px;
+		display: none;
+		position: absolute;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
 }
 
 .wallArtImages:hover .wallArtImages_dropdown {
@@ -209,7 +209,7 @@ img#wallArt1 {
 		  display: block;
 		  margin-left: auto;
 		  margin-right: auto;
-		  width: 75%;
+		  width: 50%;
 }
 
 img#wallArt1_dropdown {
@@ -226,7 +226,7 @@ img#wallArt2 {
 		  display: block;
 		  margin-left: auto;
 		  margin-right: auto;
-		  width: 75%;
+		  width: 50%;
 }
 
 img#wallArt2_dropdown {
@@ -240,23 +240,23 @@ img#wallArt2_dropdown {
 img#creditCards {
 		border: 1px solid black;
 		border-radius: 5px;
-	    margin-left: auto;
+		margin-left: auto;
 		margin-right: auto;
 		width: 99%;
 }
 
 img#order {
-	    border: 10px outset rgb(165, 143, 23);
-	    border-radius: 5px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 97%;
+		border: 10px outset rgb(165, 143, 23);
+		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 97%;
 }
 
-	/* Wall Art page video */
+/* Wall Art page video */
 .dryWall{
-	    height:300px;
-	    width:99%;
+		height:300px;
+		width:99%;
 }
 
 	/* Wall Art Page Text Styles*/
@@ -266,98 +266,82 @@ img#order {
 	   color: white ;
 	   font-family: Helvetica, sans-serif;
 	   font-weight: normal;
-	   font-size: 1.2em;
+	   font-size: 1.3em;
 	   letter-spacing: 0.03em;
 	   line-height: 1.2em;
-	   text-indent: 1.5em;
-	  
+	   text-align: center;
+	  	  
 }
 
-.wallArt_Description {
-	       
-	   color: white ;
+.wallArt_Text2 {
+	      
+	   color: white;
 	   font-family: Helvetica, sans-serif;
 	   font-weight: normal;
-	   font-size: 1.2em;
+	   font-size: 1.3em;
 	   letter-spacing: 0.03em;
+	   text-align: center;
 	   line-height: 1.2em;
-	   text-indent: 1.5em;
 	   width: 100%;
 }
 
 
-.wallArtVideo {
+.wallArtVideo_text {
 	  
 	   color: white ;
 	   font-family: Helvetica, sans-serif;
 	   font-weight: normal;
-	   font-size: 1.1em;
+	   font-size: 1.3em;
 	   letter-spacing: 0.03em;
 	   line-height: 1.2em;
 	   margin-left: auto;
 	   margin-right: auto;
+	   text-align: center;
 	   width: 95%;
 }
 
 .wallArt_headerText {
 	
 	   color: white;
-	   font-family: Apple Chancery, cursive;
-	   font-weight: normal;
-	   font-size: 1.5em;
-	   letter-spacing: 0.03em;
-	   line-height: 0.9em;
-	   text-align: center;
-}
-
-.thankYou_order {
-	   color: white;
        font-family: Apple Chancery, cursive;
        font-weight: normal;
-       font-size: 1.7em;
+       font-size: 1.55em;
        letter-spacing: 0.03em;
        line-height: 0.9em;
        text-align: center;
 }
 
- 
-.priceTable {
-	  color: white;
-      font-family: Helvetica, sans-serif;
-      text-align: center;
- }
-
-
-	/* Form Layout Styles Wall Art Page*/
+/* Form Layout Styles Wall Art Page*/
 input {
-	  border: 1px solid black;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-	  color: black;
+	   border: 1px solid black;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+	   color: black;
 	
 }
 
 fieldset#custInfo {
-	  border: 1px solid black;
-	  color: white;
-      font-family: Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 1.2em;
-      letter-spacing: 0.03em;
-      line-height: 1.1em;
-	  width: 100%;
+	   border: none;
+	   color: white;
+	   font-family: Helvetica, sans-serif;
+       font-weight: bold;
+       font-size: 1.2em;
+       letter-spacing: 0.03em;
+       line-height: 1.1em;
+       width: 98%;
 }
 select#orderChoice {
-	  border: 1px solid black;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-	  color: black;
+	   border: 1px solid black;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+	   color: black;
+	
 }
 select#sizeChoice {
-	  border: 1px solid black;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-	  color: black;
+	   border: 1px solid black;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+	   color: black;
 }
 
 select#panelChoice {
@@ -368,11 +352,10 @@ select#panelChoice {
 }
 
 form#orderForm {
-	  display: -webkit-flex;
+	
 	  display: flex;
-	  -webkit-flex-flow: row wrap;
 	  flex-flow: row wrap;
-	  width: 99%;
+	  width: 97%;
 	
 }
 form#orderForm {
@@ -381,12 +364,10 @@ form#orderForm {
 	  -webkit-flex: 1 1 300px;
 	  flex: 1 1 300px;
 	  font-size: 0.85em;
-	  margin: 10px;
-	  padding: 10px;
-	  
+		
 }
 
-	/*End of Wall Art Page */
+/*End of Wall Art Page */
 
 	/*Beginning of Review page*/
  
@@ -425,8 +406,9 @@ img#thumbsUp {
 	  width: 100%;   
 		
 }
+
 fieldset#feedbackInfo {
-	  border: 1px solid black;
+	  border: none;
 	  color: white;
       font-family: Helvetica, sans-serif;
       font-weight: normal;
@@ -437,10 +419,11 @@ fieldset#feedbackInfo {
 }
 	/*Comment Box Text Area*/
 textarea {
-	  margin-top: 10px;
+	  margin: 5px;
 	  height: 175px;
 	  width: 100%;
 }
+
 
 form#reviewForm {
 	  display: -webkit-flex;
@@ -459,59 +442,49 @@ form#reviewForm {
 	  padding: 10px;
 	  width: 90%;
 }
-
-.thankYou_review {
-	  color: white;
-      font-family: Apple Chancery, cursive;
-      font-weight: normal;
-      font-size: 1.2em;
-      letter-spacing: 0.03em;
-      line-height: 0.9em;
-      text-align: center;
-}
-
 	/*End of Review Page*/
+	
 	/*Reviews and Contact Us Page Container Descriptions*/
 
 .container {
-    background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
-    border: 2px solid black;
+      background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
+      border: 2px solid black;
 }
 
 .container:after {
-    content: "";
-    display: table;
-    clear: both;
+      content: "";
+      display: table;
+      clear: both;
 }
 .columnLeft {
    
-    border: 2px solid black;
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    letter-spacing: 0.03em;
-    line-height: 1.1em;
+      border: 2px solid black;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1.2em;
+      letter-spacing: 0.03em;
+      line-height: 1.1em;
  }
 
 .columnLeft {
-    float: left;
-    width: 65%;
+      float: left;
+      width: 65%;
 }
 
 .columnRight {
    
-   color: white;
-   font-family: Helvetica, sans-serif;
-   font-weight: normal;
-   font-size: 1.2em;
-   letter-spacing: 0.03em;
-   line-height: 1.1em;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1.2em;
+      letter-spacing: 0.03em;
+      line-height: 1.1em;
  }
  
 .columnRight {
-   float: left;
-   width: 34%;
+      float: right;
+      width: 34.65%;
 }
 
 	/*Forms for Wall Art and Review Page*/
@@ -522,7 +495,6 @@ div.formRow {
 	  -webkit-flex-flow: row wrap;
 	  flex-flow: row wrap;
 	  margin: 7px 0px;
-	
 }
 
 div.formRow >  * {
@@ -532,46 +504,59 @@ div.formRow >  * {
 }
 
 /* Form Button Styles */
+
 div#submitButton {
+	  float: left;	
 	  text-align: center;
-	  width: 100%;
+	  width: 49%;
+}
+
+div#cancelButton {
+	  
+	  float: right;
+	  text-align: center;
+	  width: 49%;
 }
 
 input[type='submit'], input[type='reset'] {
+	  background-color: rgb(90, 51, 0);
+	  color: white;
 	  cursor: pointer;
-	  font-size: 1.2em;
+	  font-size: 1.6em;
 	  margin: 15px;
 	  padding: 5px;
 	  
 }
 
+
+
 /*Beginning of Contact Page */
+
 /* Contact Page Text Styles*/
-.contact {
+.contactText {
 	  background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71)); 
-	  border: 1px outset rgb(0, 0, 0);
+	   border: 1px outset rgb(0, 0, 0);
 	  color: white ;
 	  font-family: Helvetica, sans-serif;
 	  font-weight: normal;
-	  font-size: 1.5em;
+	  font-size: 1.69em;
 	  letter-spacing: 0.03em;
-	  line-height: 1.2em;
+	  line-height: 1.4em;
+	  text-align: center;
 	  width: 100%;
 }
-
-.hoursTable {
-      color: white;
-      font-family: Helvetica, sans-serif;
-      text-align: center;
- }
 
 /*Contact Us Page Image*/
 img#contact {
-	  border: 1px solid black;
+	  border: 5px solid black;
 	  display: block;
-	  width: 100%;
+	  width: 99%;
 }
-
+img#comeIn {
+	  border: 5px solid black;
+	  display: block;
+	  width: 99%;
+}
 		
 /* Contact Us page Hyperlink to Phone Number, Email, and Facebook*/
 a#tel {
@@ -584,6 +569,7 @@ a#tel:hover, active {
 a#email {
 	  color: white;
 }
+
 a#email:hover, active {
       color: yellow;
 }
@@ -591,6 +577,7 @@ a#email:hover, active {
 a#facebook {
 	  color: white;
 }
+
 a#facebook:hover, active {
       color: yellow;
 }
@@ -612,9 +599,9 @@ ul.social_icons  {
 }
 ul.social_icons a img {
 	
-	width: 40px;
-    height: 40px;
-	margin: 5px 25px 5px 25px;
+		width: 40px;
+		height: 40px;
+		margin: 5px 25px 5px 25px;
 }
 
 
@@ -637,7 +624,6 @@ a#emailUs:hover, active {
 
 footer {
        width: 100%;
-   
 }
 
 footer p {

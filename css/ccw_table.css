@@ -24,18 +24,15 @@ table.prices {
 	border: 2px outset rgb(0, 0, 0);
 	border-collapse: collapse;
 	font-size: 1.5em;
+	vertical-align: middle;	
 	width: 100%;
 }
 
-
-
-
 table.prices th, table.prices td {
-	border: 1px solid black;
+	border: 5px solid black;
 	padding: 5px;
-	vertical-align: top;	
+	
 }
-
 
 /* Table Caption Styles */
 table.prices caption {
@@ -43,21 +40,19 @@ table.prices caption {
 	text-align: center;
 }
 
-
 /* Row Group Styles */
 table.prices thead, tbody  {
 	background: linear-gradient(to top, rgb(165, 143, 23),  rgb(71, 71, 71));
 	color: white;
 	text-align: center;
-	
 }
 
 table.prices thead tr {
-	height: 30px;
+	height: 50px;
 }
 
 table.prices tbody tr {
-	height: 40px;
+	height: 50px;
 }
 
 /* Column Group Styles */
@@ -72,27 +67,19 @@ col.sizeCols {
 
 /* Table Styles on Contact Us Page*/
 
-
 table.hours {
 		
-	border: 2px outset rgb(0, 0, 0);
+	border: 5px solid black;
 	border-collapse: collapse;
-	font-size: 1.5em;
+	font-size: 1.6em;
+	vertical-align: middle;	
 	width: 100%;
 }
 
-
-
-
 table.hours th, table.hours td {
-	border: 1px solid black;
-	padding: 5px;
-	vertical-align: top;	
+	border: 5px solid black;
+			
 }
-
-
-
-
 
 /* Row Group Styles */
 table.hours  thead, tbody  {
@@ -102,20 +89,8 @@ table.hours  thead, tbody  {
 	
 }
 
-table.hours  thead tr {
-	height: 30px;
-}
-
 table.hours  tbody tr {
-	height: 40px;
+	height: 46px;
 }
 
-/* Column Group Styles */
-col#firstCol_hours {
-	background: rgb(255, 255, 255);
-	width: 5%;
-}
-col.firstCol_hours {
-	background: rgb(255, 255, 255);
-	width: 4%;
-}
+
