@@ -7,8 +7,9 @@
 
    
    Author: Tom Settje
-   Date: Nov/2021
+   Date: Dec2021
    Filename: ccw_styles.css
+   
    These web pages are for educational purposes only. 
 */
 
@@ -23,7 +24,7 @@ html {
 
 body {
 	background-color: black;
-	border: 5px solid rgb(0, 0, 0);
+	border: 5px solid black;
 	display: flex;
 	flex-flow: row wrap;
 	max-width: 1240px;
@@ -60,7 +61,7 @@ header nav ul {
 header nav ul li {
 	   
    list-style-type: none;
-   margin: 5px 10px 5px 10px;
+  
 }
 
 header nav ul li a {
@@ -70,6 +71,7 @@ header nav ul li a {
    font-size: 2.5em;
    margin: 5px 25px 5px 25px;
    text-align: center;
+  
    
 }
 header nav ul li a:hover, nav.horizontal ul li a:active {
@@ -80,9 +82,10 @@ header nav ul li a:hover, nav.horizontal ul li a:active {
 	color: rgb(250, 237, 39);
 }
 
-a#navicon {
+#navicon {
      display: none;
 }
+
 
 /*Beginning of Index Page*/
 
@@ -503,7 +506,8 @@ div.formRow >  * {
 	  flex: 1 1 150px;
 }
 
-/* Form Button Styles */
+
+/* Form Button Styles on Wall Art and Reviews Pages*/
 
 div#submitButton {
 	  float: left;	
@@ -519,7 +523,7 @@ div#cancelButton {
 }
 
 input[type='submit'], input[type='reset'] {
-	  background-color: rgb(90, 51, 0);
+	  background-color: rgb(71, 71, 71);
 	  color: white;
 	  cursor: pointer;
 	  font-size: 1.6em;
@@ -527,8 +531,6 @@ input[type='submit'], input[type='reset'] {
 	  padding: 5px;
 	  
 }
-
-
 
 /*Beginning of Contact Page */
 
